@@ -61,7 +61,7 @@ ul{
   margin-top: 3%;
 }
 
-.container{
+.container-fluid{
   display: flex;
   padding: 15%;
   padding-top: 0;
@@ -124,7 +124,7 @@ footer{
 }
 
 @media(max-width: 796px) {
-  .container{
+  .container-fluid{
     display: flex;
     flex-direction: column;
     padding: 0;
