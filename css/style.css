@@ -1,0 +1,158 @@
+html,body{
+  font-family: helvetica, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: rgb(15, 15, 15);
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(249, 0, 85);
+}
+
+a:visited{
+  color: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-bottom: 2px solid #eee;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.navbar img{
+  flex: 1;
+  width: 48px;
+}
+
+.navbar ul{
+  flex: 1;
+  padding: 0;
+}
+
+.navbar ul li{
+  display: inline;
+  width: 100%;
+}
+
+.banner {
+  clear: both;
+  border-bottom: 2px solid #eee;
+}
+
+.banner img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.container-fluid{
+  display: flex;
+  padding: 15%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.left-container{
+  flex: 4;
+  border: 2px solid #eee;
+  border-top: 0;
+  box-sizing: border-box;
+}
+
+.left-container article{
+  margin: 3%;
+}
+
+.right-container{
+  flex: 1;
+  border: 2px solid #eee;
+  border-top: 0;
+  border-left: 0;
+  box-sizing: border-box;
+}
+
+.right-container ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.right-container l-mini{
+  justify-content: space-between;
+}
+
+.right-container r-mini{
+  justify-content: space-between;
+}
+
+.right-container li{
+  flex: 1;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.circle-image img{
+  display: block;
+  margin: 3% auto;
+  width: 300px;
+  border-radius: 50%;
+}
+
+footer{
+  clear: both;
+  margin-top: 3%;
+  text-align: center;
+  color: #545454;
+}
+
+@media(max-width: 796px) {
+  .container-fluid{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 796px;
+    min-width: 400px;
+  }
+  .left-container{
+    flex: 1;
+  }
+  .right-container{
+    flex: 1;
+  }
+  .right-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .right-container li{
+    margin: 0;
+  }
+  .circle-image img{
+    width: 35%;
+  }
+  .banner{
+    min-width: 400px;
+  }
+  .banner img{
+    width: 80%;
+  }
+}
